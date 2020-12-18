@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+   <body>
+    <a-scene>
+    <a-assets>
+      <img id="monke" src="https://pm1.narvii.com/7283/e992aeefd9f6d59397502ed829b9740dd43298f7r1-1128-780v2_uhq.jpg">
+    </a-assets>
+      <a-cone  position="-1 0.5 -3" color="tomato" radius-bottom="1" radius-top="0"></a-cone>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-box src="#monke" position="1 0.75 -3" radius="0.5" height="1" color="#FFC65D" animation="property: object3D.position.y; to: 2; dir: alternate; dur: 2000; loop: true"></a-box>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#556B2F" ></a-plane>
+      <a-sky color="#00D5FF"></a-sky>
+      <a-text value="Hey, Mediacollege Amsterdam" position="-1,5 2 -2" color="EFC65D" size="0,5"></a-text>
+    </a-scene>
+  </body>
+</html>

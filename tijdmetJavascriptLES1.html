@@ -1,0 +1,20 @@
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Goedemorgen</title>
+    </head>
+    
+    <body>
+      <h1>Tijd met javaScript</h1>
+      <input type="button" value="click me!" id="mijnButton"/>
+      <script>
+       let mijnButton = document.getElementById('mijnButton');
+       let datum = new Date();//datum is de date
+       mijnButton.addEventListener('click', ()=>{
+       window.alert(datum + " Welkom, Ik ben Menno Weerman en ben een student op het Media college")
+       })
+       
+      </script>
+    </body>
+    </html>
